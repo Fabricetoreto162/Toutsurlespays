@@ -36,7 +36,7 @@ function search() {
       drapeaupays.innerHTML = `<i class="fas fa-flag"></i> Drapeau: <br><br><img class="img-fluid rounded shadow" style="max-width:120px; height:auto;" src="${continent.flags.png}"/>`;
       monnaiepays.innerHTML = `<i class="fas fa-coins"></i> Monnaie:<br><br>${Object.values(continent.currencies)[0].name}`;
       languespays.innerHTML = `<i class="fas fa-language"></i> Langues:<br><br>${Object.values(continent.languages)[0]}`;
-      habitantspays.innerHTML = `<i class="fas fa-users"></i> Population:<br><br>environ${formatNumber(continent.population)}`;
+      habitantspays.innerHTML = `<i class="fas fa-users"></i> Population:<br><br>environ ${formatNumber(continent.population)}`;
       
       // Vider les résultats précédents
       infos.innerHTML = '';
