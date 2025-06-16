@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #1a1a1a, #4a4a4a);
+  font-family: 'Arial', sans-serif;
+}
+
+.conteneur {
+  position: relative;
+  margin-top: 5px;
+  width: 320px;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.input-btn {
+  margin-top: 5px;
+  width: 100%;
+}
+
+.input-group {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.input {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border: none !important;
+  padding: 8px !important;
+  font-size: 14px !important;
+}
+
+.btn {
+  background: #226D68 !important;
+  border: none !important;
+  padding: 8px 15px !important;
+  font-size: 14px !important;
+  transition: transform 0.3s, box-shadow 0.3s !important;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(34, 109, 104, 0.4) !important;
+}
+
+.infos {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  animation: fadeIn 0.5s ease-out;
+  font-size: 13px;
+}
+
+.infos p {
+  margin: 8px 0;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+  transition: transform 0.3s;
+}
+
+.infos p:hover {
+  transform: translateX(10px);
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+  border-radius: 20px;
+  opacity: 0.6;
+}
+
+h1 {
+  color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  margin: 5px 0;
+  font-size: 22px !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .conteneur {
+    width: 95%;
+    margin: 10px;
+  }
+}
